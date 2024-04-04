@@ -1,0 +1,142 @@
+* {
+    margin:0;
+    padding: 0;
+    outline: none;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+    scroll-padding-top: 100px;
+}
+body{
+    font-family: 'Inter', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.bg-blue{
+    background-color: #0072BC;
+}
+.navbar-light .navbar-toggler {
+    color: rgb(255 255 255 / 55%);
+    border-color: #fff;
+}
+.navbar-light .navbar-toggler-icon {
+    background-image: url(/assets/image/toggler-icon.svg);
+}
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: 0 0 0 0rem;
+}
+.btn.btn-login{
+    color: #fff;
+    border-color: #72BF44;
+    border-radius: 50px;
+    background: #72BF44;
+}
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    line-height: au;
+    color: #212529;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 6px 12px;
+    font-size: 15px;
+    border-radius: 0.25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+li.nav-item {
+    margin-right: 20px;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+}
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    color: #72BF44;
+}
+
+
+
+
+
+
+
+/* media  */
+
+/* 1680 */
+@media (max-width: 1700px) {
+
+}
+
+/* 1500 */
+@media (max-width: 1680px) {
+
+}
+
+/* 1440 */
+@media (max-width: 1449px) {
+
+}
+
+/* 1280 */
+@media (max-width: 1439px) {
+
+}
+
+/* 992 */
+@media (max-width: 1279px) {
+
+}
+
+/* 768 */
+@media (max-width: 991px) {
+
+}
+
+/* 576 */
+@media (max-width: 767px) {
+
+}
+
+/* 525 */
+@media (max-width: 575px) {
+
+}
+
+/* 480 */
+@media (max-width: 524px) {
+
+}
+
+/* 425 */
+@media (max-width: 479px) {
+
+}
+
+/* 375 */
+@media (max-width: 424px) {
+
+}
+
+/* 320 */
+@media (max-width: 374px) {
+
+}
+
+/* 280 */
+@media (max-width: 319px) {
+
+}
+
