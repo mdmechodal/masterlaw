@@ -17,7 +17,7 @@ a{
 }
 .navbar-light .navbar-toggler {
     color: rgb(255 255 255 / 55%);
-    border-color: #fff;
+    border-color: #000000;
 }
 li.nav-item {
     margin-right: 20px;
@@ -52,6 +52,7 @@ li.nav-item {
     margin-bottom: 0;
     padding-right: 10px;
     border-right: 2px solid white;
+    border-radius: 0%;
 }
 .mail-sms :nth-child(3){
     border-right: 0px;
@@ -79,6 +80,9 @@ li.nav-item {
     text-align: center;
     font-size: 14px;
     font-weight: 400;
+}
+.social-icon :nth-child(4):hover{
+    background: none;
 }
 .social-icon :nth-child(4):focus{
     box-shadow: none;
@@ -265,6 +269,8 @@ li.nav-item {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .expert-device h3{
     color: #FFF;
@@ -272,6 +278,7 @@ li.nav-item {
     font-size: 64px;
     font-weight: 400;
     margin-bottom: 0%;
+    display: flex;
     text-align: left;
 }
 .expert-device h4{
@@ -335,10 +342,12 @@ li.nav-item {
     font-weight: 400;
     margin-bottom: 0%;
 }
-.case-served h3{
+.case-served span{
     color: #352F27;     
     font-family: "Playfair Display";
     text-align: center;
+    display: flex;
+    justify-content: center;
     font-size: 50px;
     font-weight: 700;
 }
@@ -535,7 +544,7 @@ li.nav-item {
 }
 .clock-icon-text p{
     color: #FFF;
-    font-size: 16px;
+    font-size: 16px;    
     font-weight: 400;
 }
 .why-the-bg{
@@ -547,7 +556,7 @@ li.nav-item {
 .coma-symbol{
     padding-top: 50px;
 }
-.coma-symbol img{
+.coma-symbol-img img{
     padding-bottom: 25px;
 }
 .coma-symbol p{
@@ -555,6 +564,7 @@ li.nav-item {
     font-family: Poppins;
     font-size: 16px;
     font-weight: 400;
+    margin-bottom: 0%;
 }
 .coma-symbol h3{
     color: #C89D66;
@@ -567,6 +577,7 @@ li.nav-item {
     font-family: Poppins;
     font-size: 16px;
     font-weight: 400;
+    margin-bottom: 0%;
 }
 .free-demo-form{
     background-color: #C89D66;
@@ -647,6 +658,7 @@ box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.04);
     font-size: 50px;
     font-weight: 700;
     font-family: "Playfair Display";
+    margin-bottom: 0%;
 }
 .news-main-img{
     position: relative;
@@ -773,6 +785,7 @@ box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.04);
     font-family: Poppins;
     font-size: 14px;
     font-weight: 400;
+    margin-bottom: 0%;
 }
 .service-detail a span {
     color: #C89D66;
@@ -1178,6 +1191,7 @@ box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.04);
     object-fit: cover;
     border: 1px solid #333;
     border-radius: 50%;
+    padding: 0%;
 }
 .ration-detail{
     margin-left: 20px;
@@ -1470,13 +1484,44 @@ box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.04);
 .back-home a:focus{
     box-shadow: none;
 }
+.btn:focus{
+    box-shadow: none;
+}
+.newoneclass{
+    display: flex;
+    justify-content: space-between;
+}
+.owl-theme .owl-dots .owl-dot span {
+    width: 10px;
+    height: 10px;
+    margin: 5px 7px;
+    background: #c3904e;
+    display: block;
+    -webkit-backface-visibility: visible;
+    transition: opacity .2s ease;
+    border-radius: 30px;
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+    background: #fff;
+}
+.practice-area-flexi{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.s-d-flex-two{
+    display: flex;
+    align-items: center;
+}
 /* media  */
 
 /* 1680 */
 @media (max-width: 1700px) {
 
 }
-
+.s-d-flex{
+    display: flex;
+}
 /* 1500 */
 @media (max-width: 1680px) {
 
@@ -1484,52 +1529,723 @@ box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.04);
 
 /* 1440 */
 @media (max-width: 1449px) {
-
+    .slider-bg-css h1 {
+        font-size: 70px;
+    }
 }
 
 /* 1280 */
 @media (max-width: 1439px) {
+    .slider-bg-css h1 {
+        font-size: 60px;
+    }
+    .slider-bg-css a {
+        font-size: 18px;
+        padding: 14px 30px;
+    }
+    .sec-two-txt h2 {
+        font-size: 35px;
+        margin-bottom: 0px;
+        padding: 30px 0px;
+    }
+    .sec-two-txt p {
+        margin-bottom: 15px;
+    }
+    .we-fight-design img {
+        height: 444px;
+    }
+    .sec-two-txt {
+        padding: 0px 20px;
+    }
+    .py-501 {
+        padding-top: 78px;
+        padding-bottom: 0px;
+    }
+    .expert-advice {
+        padding: 35px 25px;
+    }
+    .home-heading h2 {
+        font-size: 36px;
+    }
+    .py-50 {
+        padding-top: 30px;
+    }
+    .spl-practice-bg {
+        padding: 50px 46px;
+    }
+    .py-120 {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .recent-bg img {
+        height: 360px;
+    }
+    .clock-advice {
+        padding: 16px;
+    }
+    .free-demo-form {
+        padding: 30px 40px;
+    }
+    .form-start {
+        padding: 30px 40px;
+    }
+    .form-start a {
+        padding: 14px 26px;
+    }
+    .coma-symbol {
+        padding-top: 36px;
+        padding-left: 10px;
+    }
+    .news-heading h4 {
+        font-size: 36px;
+    }
 
 }
 
 /* 992 */
 @media (max-width: 1279px) {
-
+    .mail-sms a i {
+        padding-right: 4px;
+        padding-left: 0px;
+    }
+    .mail-sms a{
+        font-size: 12px;
+    }
+    .social-icon a {
+        padding-right: 20px;
+    }
+    .navbar-light .navbar-nav .nav-link {
+        padding: 6px 12px;
+        font-size: 15px;
+        margin-bottom: 0%;
+    }
+    .slider-bg-css h1 {
+        font-size: 50px;
+    }
+    .slider-bg-css a {
+        font-size: 16px;
+        padding: 12px 24px;
+    }
+    .expert-icon {
+        margin-bottom: 18px;
+    }
+    .expert-advice h3 {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+    .expert-icon img {
+        max-width: 50px;
+        width: 50px;
+        height: 50px;
+        max-height: 50px;
+    }
+    .expert-device h4 {
+        font-size: 18px;
+    }
+    .expert-device h3 {
+        font-size: 50px;
+    }
+    .py-120 {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }   
+    .case-served span {
+        font-size: 40px;
+    } 
+    .spl-practice-bg {
+        padding: 40px 20px;
+    }
+    .home-heading-btn a {
+        font-size: 14px;
+        padding: 10px 14px;
+    }
+    .margin-top-new-two {
+        margin-top: -5rem;
+    }
+    .home-heading p {
+        font-size: 15px;
+    }
+    .video-on-img img {
+        height: 400px;
+    }
+    .playbtn a {
+        width: 80px;
+        height: 80px;
+    }
+    .recent-bg img {
+        height: 300px;
+    }
+    .skil-icon {
+        width: 140px;
+        height: 70px;
+        margin-right: 14px;
+    }
+    .clock-icon-text h3 {
+        font-size: 40px;
+    }
+    .coma-symbol {
+        padding-top: 20px;
+        padding-left: 10px;
+    }
+    .coma-symbol-img img {
+        padding-bottom: 16px;
+        width: 30px;
+    }
+    .coma-symbol p {
+        font-size: 14px;
+    }
+    .form-start {
+        padding: 30px 20px;
+    }
+    .form-start a {
+        padding: 8px 22px;
+    }
+    .form-start input {
+        padding: 10px 12px;
+    }
+    .news-date h4 {
+        font-size: 16px;
+    }
+    .news-date {
+        width: 60px;
+        height: 60px;
+    }
+    .news-main-text {
+        padding: 20px;
+    }
+    .newoneclass img{
+        width: 110px;
+    }
+    .py-80 {
+        padding-top: 50px;
+    }
+    .footer-heading h3 {
+        font-size: 20px;
+    }
+    .footer-txt p {
+        margin-bottom: 25px;
+        margin-top: 25px;
+    }
+    .newspost-details h3 {
+        font-size: 15px;
+    }
+    .time-hours h3 {
+        font-size: 14px;
+        font-weight: 400;
+        margin-top: 10px;
+    }
+    .footer-margin {
+        margin-bottom: 14px;
+    }
+    .service-detail a {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    .social-icon-footer a{
+        padding: 12px;
+    }
+    .social-icon-footer a:hover{
+        padding: 12px;
+    }
+    .footer-end h4 {
+        font-size: 14px;
+    }
+    .news-post-img {
+        margin-right: 16px;
+    }
+    .coma-symbol h3 {
+        font-size: 17px;
+    }
+    .coma-symbol h4 {
+        font-size: 15px;
+    }
+    .ration-our-img img {
+        max-width: 70px;
+        height: 70px;
+    }
+    .news-main-text h4 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .news-date{
+        padding: 10px;
+    }
+    .free-demo-form {
+        padding: 20px 40px;
+    }
 }
 
 /* 768 */
 @media (max-width: 991px) {
-
+    .social-icon :nth-child(4) {
+        padding: 0px 10px;
+        font-size: 10px;
+    }
+    .social-icon a {
+        padding-right: 10px;
+    }
+    .mail-sms a {
+        font-size: 10px;
+        padding-right: 5px;
+    }
+    .navbar-expand-lg .navbar-nav {
+        align-items: start;
+    }
+    .slider-bg-css a {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+    .owl-theme .owl-dots .owl-dot {
+        display: inline-block;
+        zoom: 0.8;
+    }
+    .sec-two-txt h2 {
+        font-size: 27px;
+        padding: 20px 0px;
+    }
+    .we-fight-design img {
+        height: 430px;
+    }
+    .sec-two-txt p {
+        font-size: 15px;
+    }
+    .sec-two-txt {
+        padding: 0px 0px;
+    }
+    .expert-device {
+        padding: 50px 20px;
+    }
+    .expert-advice {
+        padding: 20px;
+    }
+    .expert-icon {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    .expert-advice p{
+        font-size: 15px;
+    }
+    .py-120 {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+    .case-served span {
+        font-size: 34px;
+        margin-bottom: 8px;
+    }
+    .case-served h4{
+        font-size: 18px;
+    }
+    .spl-practice-bg {
+        padding: 30px 20px;
+    }
+    .practice-area-flexi{
+        flex-direction: column;
+        align-items: start;
+        margin-bottom: 15px;
+    }
+    .hover-bg img {
+        height: 250px;
+        width: 100%;
+        object-fit: cover;
+    }
+    .margin-top-new-two {
+        margin-top: -4rem;
+    }
+    .hover-bg img {
+        height: 250px;
+    }
+    .skil-icon {
+        width: 100px;
+        height: 70px;
+        margin-right: 14px;
+    }
+    .home-heading h2 {
+        font-size: 30px;
+    }
+    .skill-icon-text p {
+        font-size: 14px;
+    }
+    .advice-section-img img {
+        height: 200px;
+    }
+    .clock-icon {
+        margin-right: 20px;
+    }
+    .clock-icon-text h3 {
+        font-size: 35px;
+    }
+    .coma-symbol {
+        margin-bottom: 15px;
+    }
+    .ration-our-img img {
+        max-width: 60px;
+        height: 60px;
+    }
+    .coma-symbol p {
+        margin-bottom: 10px;
+    }
+    .free-demo-form h4 {
+        font-size: 22px;
+     }
+     .form-start input{
+        font-size: 14px;
+     }
+     .news-heading h4 {
+        font-size: 30px;
+    }
+    .news-main-img img {
+        height: 210px;
+        object-fit: cover;
+        width: 100%;
+    }
+    .news-main-text {
+        padding: 14px;
+    }
+    .news-main-text h4 {
+        font-size: 17px;
+    }
+    .news-main-text p {
+        font-size: 15px;
+    }
+    .news-date {
+        padding: 5px;
+    }
+    .news-date {
+        width: 50px;
+        height: 50px;
+    }
+    .newoneclass img {
+        width: 90px;
+    }
+    .margin-top-new {
+        margin-top: -2rem;
+    }
 }
 
 /* 576 */
 @media (max-width: 767px) {
-
+    .slider-bg-css h1 {
+        font-size: 30px;
+    }
+    .slider-bg-css p {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    .sec-two-txt {
+        padding: 30px 0px;
+    }
+    .sec-two-txt h2 {
+        font-size: 27px;
+        padding-bottom: 20px;
+        padding-top: 0%;
+    }
+    .we-fight-design img {
+        height: 350px;
+    }
+    .py-120 {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .expert-device {
+        padding: 30px 20px;
+    }
+    .case-served h4 {
+        font-size: 16px;
+    }
+    .home-heading h2 {
+        font-size: 26px;
+    }
+    .home-heading-btn a {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+    .video-on-img img {
+        height: 300px;
+    }
+    .playbtn a {
+        width: 60px;
+        height: 60px;
+    }
+    .hover-bg img {
+        height: 200px;
+    }
+    .skil-icon {
+        width: 66px;
+        height: 66px;
+        margin-right: 14px;
+    }
+    .skill-all {
+        align-items: center;
+    }
+    .margin-top-new {
+        margin-top: 0rem;
+    }
+    button.btn-close.btn-close-modal{
+        width: 2px;
+    }
+    .free-demo-form {
+        padding: 10px 24px;
+    }
+    .free-demo-form h4 {
+        font-size: 20px;
+    }
+    .owl-theme .owl-dots .owl-dot {
+        display: inline-block;
+        zoom: 0.5;
+    }
+    .news-date h4 {
+        font-size: 14px;
+    }
+    .footer-end {
+        padding: 14px;
+    }
+    .news-main-text p {
+        font-size: 14px;
+    }
+    .coma-symbol {
+        padding-top: 15px;
+        padding-left: 10px;
+    }
+    .footer-heading h3 {
+        font-size: 18px;
+        padding-bottom: 12px;
+    }
 }
 
 /* 525 */
 @media (max-width: 575px) {
-
+    .py-501 {
+        padding-top: 60px;
+        padding-bottom: 0px;
+    }
+    .py-120 {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .we-fight-design img {
+        height: 300px;
+    }
+    .skil-icon img {
+        width: 40px;
+        height: 30px;
+    }
+    .form-start{
+        padding: 20px;
+    }
+    .footer-end h4 {
+        font-size: 13px;
+    }
+    .slider-bg-css a {
+        font-size: 15px;
+        padding: 5px 16px;
+    }
+    .we-fight-design img {
+        height: 250px;
+    }
+    .sec-two-txt h2 {
+        font-size: 25px;
+        padding-bottom: 10px;
+    }
+    .py-120 {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .expert-icon img {
+        max-width: 40px;
+        width: 40px;
+        height: 40px;
+        max-height: 40px;
+    }
+    .expert-advice h3 {
+        font-size: 20px;
+    }
+    .expert-advice p {
+        font-size: 14px;
+    }
+    .expert-icon {
+        margin-bottom: 10px;
+    }
+    .expert-device h3 {
+        font-size: 40px;
+    }
+    .skill-all {
+        margin-bottom: 20px;
+    }
+    .py-50 {
+        padding-top: 20px;
+    }
+    .header-main{
+        display: none;
+    }
 }
 
 /* 480 */
 @media (max-width: 524px) {
-
+    .newoneclass img {
+        width: 60px;
+    }
 }
 
 /* 425 */
 @media (max-width: 479px) {
+    .sec-two-txt h2 {
+        font-size: 22px;
+        padding-bottom: 10px;
+    }
+    .expert-device {
+        padding: 20px;
+    }
+    .footer-end h4 {
+        font-size: 10px;
+    }
+    .expert-device h3 {
+        font-size: 36px;
+    }
+    .expert-advice h3 {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+    .expert-icon {
+        margin-bottom: 5px;
+    }
+    .case-served span {
+        font-size: 30px;
+        margin-bottom: 6px;
+    }
+    .case-served h4 {
+        font-size: 13px;
+        color: black;
+    }
+    .home-heading h2 {
+        font-size: 22px;
+    }
+    .clock-icon i {
+        color: #fff;
+        font-size: 40px;
+    }
+    .clock-icon-text h3 {
+        font-size: 30px;
+    }
+    .clock-icon-text p {
+        font-size: 14px;
+    }
+    .py-120 {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .ration-our-img img {
+        max-width: 50px;
+        height: 50px;
+    }
+    .free-demo-form h4 {
+        font-size: 18px;
+    }
 
 }
 
 /* 375 */
 @media (max-width: 424px) {
-
+    .footer-end {
+        padding: 14px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-end h4 {
+        font-size: 10px;
+        line-height: 15px;
+    }
+    .slider-bg-css a {
+        font-size: 15px;
+        padding: 5px 16px;
+        margin-bottom: 40px;
+    }
+    .expert-advice {
+        padding: 15px;
+    }
+    .skil-icon {
+        width: 80px;
+        height: 62px;
+        margin-right: 10px;
+    }
+    .skill-icon-text h3 {
+        font-size: 18px;
+    }
+    .skil-icon img {
+        width: 33px;
+        height: 30px;
+    }
+    .s-d-flex{
+        flex-direction: column;
+    }
+    .s-d-flex-two{
+        flex-direction: row-reverse;
+        justify-content: left;
+    }
+    .ration-our-img img{
+        margin-right: 10px;
+    }
+    .coma-symbol {
+        padding-top: 15px;
+        padding-left: 0px;
+    }
+    .coma-symbol {
+        margin-bottom: 5px;
+    }
+    .free-demo-form {
+        margin-top: 15px;
+    }
+    .footer-txt p {
+        margin-bottom: 10px;
+        margin-top: 15px;
+    }
+    .footer-end {
+        padding: 10px;
+    }
+    .newoneclass img {
+        width: 40px;
+    }
+    .py-80 {
+        padding-top: 30px;
+    }
+    .py-50 {
+        padding-top: 10px;
+    }
 }
 
 /* 320 */
 @media (max-width: 374px) {
-
+    .slider-bg-css a {
+        font-size: 14px;
+        padding: 4px 12px;
+        margin-bottom: 25px;
+    }
+    .case-served span {
+        font-size: 25px;
+        margin-bottom: 6px;
+    }
+    .slider-bg-css h1 {
+        font-size: 27px;
+    }
+    .slider-bg-css h1 {
+        font-size: 27px;
+    }
+    .playbtn a {
+        width: 50px;
+        height: 50px;
+    }
+    .skil-icon {
+        width:92px;
+        height: 62px;
+        margin-right: 10px;
+    }
+    .coma-symbol-img img {
+        padding-bottom: 10px;
+        width: 25px;
+    }
+    .form-start {
+        padding: 20px 10px;
+    }
 }
 
 /* 280 */

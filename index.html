@@ -28,7 +28,9 @@
     <!-- owl Carousel css -->
     <link rel="stylesheet" href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css">
-    
+    <!-- animation link -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Style Css -->
     <link rel="stylesheet" href="./assets/css/style.css">
  
@@ -100,15 +102,8 @@
                             </ul>
                           </div>
                     </li>  
-                    <li class="nav-item">
-                        <div class="dropdown spl-dropdown">
-                            <a class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                              News
-                            </a>
-                            <ul class="dropdown-menu spl-dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                              <li><a class="dropdown-item" href="./news-grid.html">News</a></li>
-                            </ul>
-                          </div>
+                    <li class="nav-item spl-nav-item ">
+                        <a class="nav-link " href="./news-grid.html" > News</a>
                     </li>                     
                     <li class="nav-item spl-nav-item ">
                         <a class="nav-link " href="./contact.html" > Contact </a>
@@ -133,7 +128,7 @@
                     <div class="col-lg-7 col-md-10 col-12">
                       <div class="home-slider-one slider-bg-css">
                             <p>Learn Anything. Make Things Happen</p>
-                            <h1> Welcome to Law Firm </h1>
+                            <h1 data-aos="zoom-out-up"> Welcome to Law Firm </h1>
                             <a href="#" class="btn">Discover More</a>
                         </div>
                       </div>
@@ -148,7 +143,7 @@
                       <div class="col-lg-7 col-md-10 col-12">
                         <div class="home-slider-one slider-bg-css">
                             <p>Learn Anything. Make Things Happen</p>
-                            <h1> Welcome to Law Firm </h1>
+                            <h1 data-aos="zoom-out-up"> Welcome to Law Firm </h1>
                             <a href="#" class="btn">Discover More</a>
                         </div>
                       </div>
@@ -163,7 +158,7 @@
                       <div class="col-lg-7 col-md-10 col-12">
                         <div class="home-slider-one slider-bg-css">
                             <p>Learn Anything. Make Things Happen</p>
-                            <h1> Welcome to Law Firm </h1>
+                            <h1 data-aos="zoom-out-up"> Welcome to Law Firm </h1>
                             <a href="#" class="btn">Discover More</a>
                         </div>
                       </div>
@@ -179,12 +174,12 @@
     <section class="py-501 ">
         <div class="container sec-two-bg home-sec-two">
             <div class="row">
-                <div class="col-6">
+                <div class="col-6 col-12">
                     <div class="we-fight-design">
                         <img src="./assets/image/home-sec-three.svg" class="img-fluid" alt="">
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-6 col-12">
                     <div class="sec-two-txt">
                         <h2>We Fight for justice We are <span>always ready.</span></h2>
                         <p>iExperto is a global IT solutions company trusted by customers and valued by employees. We provide customized IT solutions that will change the way you do business.</p>
@@ -204,13 +199,13 @@
         <section class="py-120">
             <div class="container">
                 <div class="row">
-                    <div class="col-3 ">
+                    <div class="co-lg-3 col-md-4 col-sm-6 col-12 mb-3">
                         <div class="expert-device">
-                            <h3>30<span><i class="fa-solid fa-plus"></i></span></h3>      
+                            <h3 id="count5" class="display-5"><span><i class="fa-solid fa-plus"></i></span></h3>      
                             <h4>Years of Experiences</h4>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="co-lg-3 col-md-4 col-sm-6 col-12 mb-3">
                         <div class="exper-advice-bg  mt-0">
                             <div class="expert-advice">
                                 <div class="expert-icon">
@@ -221,7 +216,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="co-lg-3 col-md-4 col-sm-6 col-12 mb-3">
                         <div class="exper-advice-bg-to  mt-0">
                             <div class="expert-advice">
                                 <div class="expert-icon">
@@ -232,7 +227,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="co-lg-3 col-md-4 col-sm-6 col-12 mb-3">
                         <div class="exper-advice-bg-three  mt-0">
                             <div class="expert-advice">
                                 <div class="expert-icon">
@@ -252,26 +247,26 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-3">
-                            <div class="case-served">
-                                <h3>15890</h3>
+                            <div class="case-served ">
+                                <span id="count1" class="display-4"></span>
                                 <h4>Case Served</h4>
                             </div>
                         </div>
                         <div class="col-3">
                             <div class="case-served">
-                                <h3>525</h3>
+                                <span id="count2" class="display-4"></span>
                                 <h4>Advisors</h4>
                             </div>
                         </div>
                         <div class="col-3">
                             <div class="case-served">
-                                <h3>274</h3>
+                                <span id="count3" class="display-4"></span>
                                 <h4>Total Clients </h4>
                             </div>
                         </div>
                         <div class="col-3">
                             <div class="case-served">
-                                <h3>1248</h3>
+                                <span id="count4" class="display-4"></span>
                                 <h4>Projects</h4>
                             </div>
                         </div>
@@ -284,7 +279,7 @@
     <section class="margin-top-new-two lady-second">
         <section class="py-100 ">
             <div class="container spl-practice-bg">
-                <div class="d-flex justify-content-between align-items-center">
+                <div class="practice-area-flexi">
                     <div class="home-heading">
                         <h2>Practice Areas </h2>
                         <p>Our aim is to develop positive ballpark value add beta test close Pellentesque sit amet velit tellus. </p>
@@ -297,7 +292,7 @@
                 <div class="owl-carousel owl-theme owl-carousell owl-theme">
                     <div class="item">
                         <div class="hover-bg">
-                            <img src="./assets/image/hoverone.svg" class="img-fluid">
+                            <img src="./assets/image/hoverone.svg" class="img-fluid" >
                             <div class="expert-advice-two">
                                 <div class="expert-icon">
                                     <img src="./assets/image/expert-icon.svg" class="img-fluid" alt="">
@@ -418,7 +413,7 @@
     <section class="py-120 pt-0 advice-bg">
         <div class="container">
             <div class="row">
-                <div class="col-4">
+                <div class="col-4 col-md-6  col-12">
                     <div class="home-heading">
                         <h3 class="text-start">Why Choose Us</h3>
                         <h2 class="text-start">Do You Need Advice From Professional</h2>
@@ -430,9 +425,9 @@
                             fugiat nulla pariatur occaecat cupidata.</p>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-4 col-md-6  col-12">
                     <div class="skill-all">
-                        <div class="skil-icon">
+                        <div class="skil-icon "  data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="500">
                             <img src="./assets/image/skill-one.svg" class="img-fluid" alt="">
                         </div>
                         <div class="skill-icon-text">
@@ -441,7 +436,7 @@
                         </div>
                     </div>
                     <div class="skill-all">
-                        <div class="skil-icon">
+                        <div class="skil-icon"  data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="500">
                             <img src="./assets/image/skill-two.svg" class="img-fluid" alt="">
                         </div>
                         <div class="skill-icon-text">
@@ -450,7 +445,7 @@
                         </div>
                     </div>
                     <div class="skill-all">
-                        <div class="skil-icon">
+                        <div class="skil-icon"  data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="500">
                             <img src="./assets/image/skill-three.svg" class="img-fluid" alt="">
                         </div>
                         <div class="skill-icon-text">
@@ -459,7 +454,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-4 col-md-6  col-12">
                     <div class="advice-section-img">
                         <img src="./assets/image/advice-section.svg" class="img-fluid">
                     </div>
@@ -481,33 +476,51 @@
     <section class="py-120 pt-0 why-the-bg">
         <div class="container py-120 pb-0">
             <div class="row">
-                <div class="col-6">
+                <div class="col-6 col-12">
                     <div class="home-heading">
                         <h3 class="text-start">Client Testimonials</h3>
                         <h2 class="text-start text-white">What They Are Saying</h2>                        
                     </div>
-                    <div class="d-flex">
-                        <div class="coma-symbol">
-                            <img src="./assets/image/coma-symbol.svg" class="img-fluid">
+                    <div class="s-d-flex">
+                        <div class="coma-symbol ps-0">
+                            <div class="coma-symbol-img">
+                                <img src="./assets/image/coma-symbol.svg" class="img-fluid">
+                            </div>
                             <p>I was very impresed by the kologi
                                 service lorem ipsum is simply free
                                 text used by copytyping refreshing.
                                 Neque porro est.</p>
-                            <h3>Mike Hardsone</h3>
-                            <h4>Client Feedback</h4>
+                                <div class="s-d-flex-two">
+                                    <div>
+                                        <h3>Mike Hardsone</h3>
+                                        <h4>Client Feedback</h4>
+                                    </div>
+                                        <div class="ration-our-img ms-3">
+                                            <img src="./assets/image/test-emp.svg" class="img-fluid">
+                                        </div>
+                                </div>
                         </div>
                         <div class="coma-symbol">
-                            <img src="./assets/image/coma-symbol.svg" class="img-fluid">
+                            <div class="coma-symbol-img">
+                                <img src="./assets/image/coma-symbol.svg" class="img-fluid">
+                            </div>
                             <p>I was very impresed by the kologi
                                 service lorem ipsum is simply free
                                 text used by copytyping refreshing.
                                 Neque porro est.</p>
-                            <h3>Mike Hardsone</h3>
-                            <h4>Client Feedback</h4>
+                                <div class="s-d-flex-two">
+                                    <div>
+                                        <h3>Mike Hardsone</h3>
+                                        <h4>Client Feedback</h4>
+                                    </div>
+                                        <div class="ration-our-img ms-3">
+                                            <img src="./assets/image/test-emp.svg" class="img-fluid">
+                                        </div>
+                                </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-6">  
+                <div class="col-6 col-12">  
                         <div class="free-demo-form ">
                             <h4 >Request A Free Quote</h4>
                         </div> 
@@ -545,7 +558,7 @@
                 <h4>News & Articles</h4>
             </div>
             <div class="row py-50 pb-0">
-                <div class="col-4">
+                <div class="col-4 col-md-6 col-sm-6 col-12 mb-3">
                     <div class="news-main">
                         <div class="news-main-img">
                             <img src="./assets/image/news-main-first.svg" class="img-fluid">
@@ -560,7 +573,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-4 col-md-6 col-sm-6 col-12 mb-3">
                     <div class="news-main">
                         <div class="news-main-img">
                             <img src="./assets/image/news-main-second.svg" class="img-fluid">
@@ -575,7 +588,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-4 col-md-6 col-sm-6 col-12 mb-3">
                     <div class="news-main">
                         <div class="news-main-img">
                             <img src="./assets/image/news-main-third.svg" class="img-fluid">
@@ -592,11 +605,10 @@
                 </div>
             </div>
         </div>
-    </section>
 
     <section class="bg-white py-120 margin-top-new">
         <div class="container">
-            <div class="d-flex justify-content-between">
+            <div class="newoneclass">
                 <img src="./assets/image/newone.svg" class="img-fluid">
                 <img src="./assets/image/newtwo.svg" class="img-fluid">
                 <img src="./assets/image/newthree.svg" class="img-fluid">
@@ -610,7 +622,7 @@
     <section class="py-80 pb-0">
         <div class="container">
             <div class="row">
-                <div class="col-3">
+                <div class="col-3 col-md-6 col-sm-6 col-12">
                     <div class="footer-logo">
                         <img src="./assets/image/footer-logo.svg" class="img-fluid">
                     </div>
@@ -620,13 +632,13 @@
                             along the information.</p>
                     </div>
                     <div class="social-icon-footer">
-                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="btn "><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="btn "><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="btn "><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#" class="btn "><i class="fa-brands fa-instagram"></i></a>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-3 col-md-6 col-sm-6 col-12">
                     <div class="footer-heading footer-margin">
                         <h3>Latest News</h3>
                     </div>
@@ -658,7 +670,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-3 col-md-6 col-sm-6 col-12">
                     <div class="footer-heading footer-margin">
                         <h3>Services</h3>
                     </div>
@@ -671,13 +683,13 @@
                         <a href="#"><span><i class="fa-solid fa-chevron-right"></i></span>Health Law</a>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-3 col-md-6 col-sm-6 col-12">
                     <div class="footer-heading footer-margin">
                         <h3>Opening Hours</h3>
                     </div>
                     <div class="time-hours">
-                        <h3>Monday - Tuesday</h3>
-                        <h3>9.00 - 17.00</h3>
+                        <h3 class="mt-0">Monday - Tuesday</h3>
+                        <h3 class="mt-0">9.00 - 17.00</h3> 
                     </div>
                     <div class="time-hours">
                         <h3>Wednesday</h3>
@@ -699,15 +711,14 @@
             </div>
         </div>
         <div class="footer-end">
-            <div class="container d-flex justify-content-between"> 
                 <h4>© 2014 - 2023<span> <a href="#">MASTERLAW JOOMLA.</a></span></h4>
                 <h4><span><a href="#">All Rights Reserved by CODELAYERS.</a></span></h4>
-            </div>
         </div>
     </section>
     <!--Footer section End-->
 
     <!-- owl Carousel JS -->
+    <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
     <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/vendors/jquery.min.js"></script>
     <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"></script>
     <script src="./assets/js/style.js"></script>
