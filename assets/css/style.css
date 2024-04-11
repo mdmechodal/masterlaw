@@ -1445,6 +1445,13 @@ box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.04);
     align-items: center;
     justify-content: center;
 }
+.error-page-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
 .error-page h2{
     color: #C89D66;
     text-align: center;
